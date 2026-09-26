@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DramaJepang.com - 99RB Akses Selamanya | Nonton Tanpa Iklan & Tanpa Sensor</title>
+    
+    <!-- Fallback Basic CSS to prevent white screen if CDN is slow -->
+    <style>
+        html, body {
+            background-color: #07090E !important;
+            color: #F1F5F9 !important;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome 6 Pro CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#07090E',
+                        surfaceDark: '#0D111A',
+                        surfaceCard: '#141A29',
+                        borderLight: 'rgba(255, 255, 255, 0.12)',
+                        cyberpink: {
+                            400: '#FF2E93',
+                            500: '#FF007A',
+                            600: '#D90062',
+                            700: '#B3004F'
+                        },
+                        cyberpurple: {
+                            500: '#8A2BE2',
+                            600: '#7012CE'
+                        },
+                        neoncyan: '#00F0FF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'neon-pink': '0 0 25px rgba(255, 0, 122, 0.45)',
+                        'neon-gold': '0 0 25px rgba(245, 158, 11, 0.45)',
+                        'neon-cyan': '0 0 20px rgba(0, 240, 255, 0.35)',
+                        'card-glow': '0 10px 30px -10px rgba(0,0,0,0.8)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-header {
+            background: rgba(7, 9, 14, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(20, 26, 41, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .text-gradient-pink {
+            background: linear-gradient(135deg, #FF2E93 0%, #FF007A 50%, #8A2BE2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hide scrollbars */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="antialiased text-slate-100 selection:bg-cyberpink-500 selection:text-white pb-20 sm:pb-0 bg-obsidian">
+
+    <div class="bg-gradient-to-r from-cyberpink-600 via-cyberpurple-600 to-cyberpink-600 text-white text-[11px] sm:text-xs font-bold py-2 px-4 text-center tracking-wide border-b border-white/10 flex items-center justify-center gap-2 shadow-lg relative z-50">
+        <span class="bg-amber-400 text-obsidian px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider animate-pulse">PROMO VIP</span>
+        <span>🔥 Dapatkan Akses 100% Selamanya Cuma <strong class="text-amber-300 font-extrabold underline decoration-amber-300">Rp 99.000</strong> (Sekali Bayar — Tanpa Sensor & Tanpa Iklan)</span>
+    </div>
+
+    <header class="sticky top-0 z-40 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <div class="flex items-center space-x-3 cursor-pointer group" onclick="scrollToSection('heroSection')">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyberpink-500 via-cyberpurple-600 to-cyberpink-700 flex items-center justify-center shadow-neon-pink group-hover:scale-105 transition duration-300">
+                    <i class="fa-solid fa-play text-white text-base ml-0.5"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-black font-heading tracking-wider text-white">
+                        DRAMAJEPANG<span class="text-cyberpink-500">.COM</span>
+                    </span>
+                    <span class="block text-[9px] text-slate-300 font-mono tracking-widest -mt-1 uppercase">NO ADS • NO SENSOR</span>
+                </div>
+            </div>
+
+            <!-- Action Buttons Header -->
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <button onclick="scrollToSection('pricingSection')" class="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-amber-500/30 to-cyberpink-500/30 hover:from-amber-500/40 hover:to-cyberpink-500/40 text-amber-300 border border-amber-400/50 px-3.5 py-2 rounded-xl font-black text-xs transition duration-300 shadow-sm">
+                    <i class="fa-solid fa-crown text-amber-400"></i>
+                    <span>99RB AKSES SELAMANYA</span>
+                </button>
+                <!-- ADMIN UPLOAD BUTTON -->
+                <button onclick="openAdminPinModal()" class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-slate-100 border border-white/20 px-3 py-2 rounded-xl font-bold text-xs transition duration-300 active:scale-95 shadow-md">
+                    <i class="fa-solid fa-cloud-arrow-up text-cyberpink-400"></i>
+                    <span class="hidden sm:inline">Upload Bulk</span>
+                    <span class="sm:hidden">Upload</span>
+                </button>
+                <button onclick="scrollToSection('koleksiSection')" class="flex items-center space-x-2 bg-gradient-to-r from-cyberpink-500 via-cyberpurple-600 to-cyberpink-600 hover:from-cyberpink-600 hover:to-cyberpink-700 text-white px-4 py-2 rounded-xl font-extrabold text-xs transition duration-300 shadow-neon-pink active:scale-95">
+                    <i class="fa-solid fa-circle-play text-xs"></i>
+                    <span class="tracking-wide">NONTON</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="heroSection" class="relative pt-8 pb-12 sm:pt-16 sm:pb-20 overflow-hidden">
+        <!-- Ambient Glow Effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 sm:w-[600px] sm:h-[600px] bg-cyberpink-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-72 h-72 bg-cyberpurple-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            
+            <!-- Badges -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+                <span class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500/25 to-amber-600/25 border border-amber-400/60 text-amber-300 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-md">
+                    <i class="fa-solid fa-crown text-amber-400"></i> 99RB AKSES SELAMANYA
+                </span>
+                <span class="inline-flex items-center gap-1.5 bg-cyberpink-500/20 border border-cyberpink-400/50 text-cyberpink-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-ban"></i> TANPA IKLAN & TANPA SENSOR
+                </span>
+            </div>
+
+            <!-- Headline Copywriting -->
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-black font-heading text-white tracking-tight leading-tight mb-4">
+                🔥 DRAMA JEPANG TERBARU & <br class="hidden sm:block">
+                <span class="text-gradient-pink">PALING MENGGODA</span>
+            </h1>
+
+            <p class="text-slate-200 text-sm sm:text-lg font-medium max-w-3xl mx-auto leading-relaxed mb-6">
+                CERITA BERANI YANG BIKIN PENASARAN DARI AWAL SAMPAI AKHIR. <br class="hidden sm:block">
+                Bukan cuma tentang cinta. Ada tatapan yang sulit diartikan, hubungan yang dirahasiakan, godaan yang semakin kuat, dan keputusan yang bisa mengubah semuanya.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto mb-10">
+                <button onclick="scrollToSection('pricingSection')" class="w-full sm:w-auto flex items-center justify-center space-x-2 bg-gradient-to-r from-amber-500 via-cyberpink-500 to-cyberpurple-600 hover:from-amber-600 hover:to-cyberpurple-700 text-white font-black px-8 py-4 rounded-2xl transition duration-300 shadow-neon-pink text-xs sm:text-sm tracking-wider active:scale-95">
+                    <i class="fa-solid fa-bolt text-amber-300"></i>
+                    <span>DAPATKAN AKSES 99RB SELAMANYA</span>
+                </button>
+                <button onclick="scrollToSection('koleksiSection')" class="w-full sm:w-auto flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-extrabold px-6 py-4 rounded-2xl transition duration-300 text-xs sm:text-sm active:scale-95">
+                    <i class="fa-solid fa-film text-cyberpink-400"></i>
+                    <span>LIHAT KOLEKSI DRAMA</span>
+                </button>
+            </div>
+
+            <!-- Value Props Checklist -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left bg-surfaceDark/90 border border-white/15 p-4 rounded-2xl shadow-xl">
+                <div class="flex items-center space-x-2.5">
+                    <div class="w-7 h-7 rounded-lg bg-cyberpink-500/20 flex items-center justify-center text-cyberpink-400 font-bold text-xs shrink-0">✓</div>
+                    <span class="text-xs font-bold text-slate-200">Bisa Nonton via HP & Laptop</span>
+                </div>
+                <div class="flex items-center space-x-2.5">
+                    <div class="w-7 h-7 rounded-lg bg-cyberpink-500/20 flex items-center justify-center text-cyberpink-400 font-bold text-xs shrink-0">✓</div>
+                    <span class="text-xs font-bold text-slate-200">Tampilan Praktis & Cepat</span>
+                </div>
+                <div class="flex items-center space-x-2.5">
+                    <div class="w-7 h-7 rounded-lg bg-cyberpink-500/20 flex items-center justify-center text-cyberpink-400 font-bold text-xs shrink-0">✓</div>
+                    <span class="text-xs font-bold text-slate-200">100% Bebas Iklan Pop-up</span>
+                </div>
+                <div class="flex items-center space-x-2.5">
+                    <div class="w-7 h-7 rounded-lg bg-cyberpink-500/20 flex items-center justify-center text-cyberpink-400 font-bold text-xs shrink-0">✓</div>
+                    <span class="text-xs font-bold text-slate-200">Update Koleksi Pilihan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="koleksiSection" class="py-14 relative z-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 text-center md:text-left">
+                <div>
+                    <span class="inline-flex items-center gap-1.5 bg-cyberpink-500/20 text-cyberpink-400 border border-cyberpink-500/40 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest mb-2">
+                        <i class="fa-solid fa-film"></i> KOLEKSI POSTER DRAMA
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-black text-white font-heading">
+                        🔥 KOLEKSI DRAMA TERBARU
+                    </h2>
+                    <p class="text-slate-300 text-xs sm:text-sm mt-1">
+                        Pilih poster dan tekan tombol di bawah untuk menonton drama favorit Anda.
+                    </p>
+                </div>
+            </div>
+
+            <!-- DRAMA POSTERS GRID (FULL LEBAR HP, 1 FOTO PER BARIS) -->
+            <div id="dramaGrid" class="grid grid-cols-1 gap-6 max-w-md sm:max-w-xl mx-auto">
+                <!-- Dynamic Content Generated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="pricingSection" class="py-16 relative z-10 bg-gradient-to-b from-obsidian via-surfaceDark to-obsidian border-t border-white/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <!-- SECTION HEADER -->
+            <div class="text-center mb-8 bg-surfaceCard/90 border border-amber-400/40 p-6 rounded-3xl shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 via-cyberpink-500 to-cyberpurple-600"></div>
+                
+                <span class="inline-flex items-center gap-2 bg-amber-400 text-obsidian px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-3 shadow-neon-gold">
+                    <i class="fa-solid fa-crown text-obsidian"></i> PENAWARAN SPESIAL TERBATAS
+                </span>
+                
+                <h2 class="text-3xl sm:text-5xl font-black text-white font-heading tracking-tight mt-1 mb-2">
+                    99RB <span class="text-gradient-gold">AKSES SELAMANYA</span>
+                </h2>
+                
+                <p class="text-slate-100 text-sm sm:text-base font-medium max-w-2xl mx-auto leading-relaxed">
+                    Nikmati akses seumur hidup ke seluruh koleksi drama premium <strong class="text-amber-300">DramaJepang.com</strong> tanpa biaya bulanan, tanpa sensor, dan 100% bebas gangguan iklan.
+                </p>
+            </div>
+
+            <!-- PRICING CARD -->
+            <div class="max-w-lg mx-auto rounded-3xl bg-surfaceCard border-2 border-amber-400/60 p-6 sm:p-8 shadow-2xl relative text-center">
+                
+                <div class="inline-block bg-gradient-to-r from-amber-400 to-cyberpink-500 text-obsidian font-black text-xs tracking-widest uppercase px-5 py-1.5 rounded-full shadow-lg mb-4">
+                    PROMO EKSKLUSIF • SEKALI BAYAR
+                </div>
+
+                <div class="my-3 bg-obsidian/80 p-4 rounded-2xl border border-white/10">
+                    <span class="text-slate-400 text-xs sm:text-sm line-through block font-mono font-bold">Harga Normal: Rp 198.000 / Sekali Bayar</span>
+                    <div class="flex items-center justify-center gap-1 my-1">
+                        <span class="text-amber-400 text-xl font-bold">Rp</span>
+                        <span class="text-5xl sm:text-6xl font-black text-white font-heading tracking-tight">99.000</span>
+                        <span class="text-amber-300 text-xs sm:text-sm font-bold">/ selamanya</span>
+                    </div>
+                    <p class="text-neoncyan text-xs font-black tracking-wide">✨ CUKUP 1x BAYAR UNTUK AKSES SEUMUR HIDUP</p>
+                </div>
+
+                <hr class="border-white/15 my-6">
+
+                <!-- VIP Features List -->
+                <ul class="text-left space-y-3 text-xs sm:text-sm text-slate-100 mb-8 font-semibold">
+                    <li class="flex items-center space-x-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-lg shrink-0"></i>
+                        <span>Akses 100% Seluruh Episode Tanpa Kunci (Selamanya)</span>
+                    </li>
+                    <li class="flex items-center space-x-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-lg shrink-0"></i>
+                        <span>Kualitas Gambar Super Jernih & Tajam</span>
+                    </li>
+                    <li class="flex items-center space-x-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-lg shrink-0"></i>
+                        <span>100% Tanpa Sensor & Bebas Iklan Pop-up</span>
+                    </li>
+                    <li class="flex items-center space-x-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-lg shrink-0"></i>
+                        <span>Tampilan Praktis & Cepat Di HP / Laptop</span>
+                    </li>
+                    <li class="flex items-center space-x-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-lg shrink-0"></i>
+                        <span>Bebas Update Judul Terbaru Tanpa Biaya Tambahan</span>
+                    </li>
+                </ul>
+
+                <button onclick="subscribeVIP()" class="w-full bg-gradient-to-r from-amber-500 via-cyberpink-500 to-cyberpurple-600 hover:from-amber-600 hover:to-cyberpurple-700 text-white font-black py-4 rounded-2xl transition duration-300 shadow-neon-gold text-xs sm:text-sm tracking-wider flex items-center justify-center space-x-2 active:scale-95">
+                    <i class="fa-solid fa-bolt text-amber-300 text-base"></i>
+                    <span>DAPATKAN AKSES SELAMANYA — RP 99.000</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 bg-obsidian py-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-cyberpink-500 flex items-center justify-center text-white font-bold text-xs shadow-neon-pink">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <span class="font-extrabold font-heading text-white text-sm tracking-wider">DRAMAJEPANG<span class="text-cyberpink-500">.COM</span></span>
+            </div>
+            <p class="text-xs text-slate-400 font-mono">
+                &copy; 2026 DramaJepang.com Cinema Experience. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE NAVIGATION BAR -->
+    <div id="mobileBottomNav" class="fixed bottom-0 left-0 right-0 z-40 bg-surfaceDark/95 backdrop-blur-md border-t border-white/10 p-2.5 sm:hidden flex items-center justify-around gap-2 shadow-2xl">
+        <button onclick="subscribeVIP()" class="flex-1 w-full bg-gradient-to-r from-amber-500 via-cyberpink-500 to-cyberpurple-600 text-white font-black py-3 px-4 rounded-xl text-xs tracking-wider flex items-center justify-center space-x-2 shadow-neon-pink active:scale-95">
+            <i class="fa-solid fa-crown text-amber-300"></i>
+            <span>DAPATKAN AKSES 99RB SELAMANYA</span>
+        </button>
+        <button id="adminUploadMobileBtn" onclick="openAdminPinModal()" class="bg-white/10 text-slate-100 border border-white/20 font-bold py-3 px-3 rounded-xl text-xs flex items-center justify-center space-x-1 active:scale-95 shrink-0">
+            <i class="fa-solid fa-cloud-arrow-up text-cyberpink-400"></i>
+            <span>Upload</span>
+        </button>
+    </div>
+
+    <!-- ADMIN PIN MODAL -->
+    <div id="adminPinModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4 hidden">
+        <div class="glass-card max-w-sm w-full rounded-3xl p-6 border border-cyberpink-500/50 shadow-2xl relative text-center">
+            <div class="w-12 h-12 rounded-2xl bg-cyberpink-500/20 text-cyberpink-400 flex items-center justify-center mx-auto mb-3 text-xl border border-cyberpink-500/30">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3 class="text-lg font-black text-white font-heading">Verifikasi PIN Admin</h3>
+            <p class="text-xs text-slate-300 mt-1 mb-4">Akses khusus pemilik web untuk upload foto bulk & export HTML.</p>
+            
+            <input type="password" id="adminPinInput" placeholder="Masukkan PIN (Default: 1234)" class="w-full bg-obsidian border border-white/20 rounded-xl px-4 py-3 text-center text-lg font-mono text-white mb-4 focus:outline-none focus:border-cyberpink-500">
+            
+            <div class="flex gap-2">
+                <button onclick="closeAdminPinModal()" class="flex-1 bg-white/10 hover:bg-white/20 text-slate-300 font-bold py-2.5 rounded-xl text-xs">
+                    Batal
+                </button>
+                <button onclick="verifyAdminPIN()" class="flex-1 bg-gradient-to-r from-cyberpink-500 to-cyberpurple-600 hover:from-cyberpink-600 hover:to-cyberpurple-700 text-white font-extrabold py-2.5 rounded-xl text-xs shadow-neon-pink">
+                    Masuk Admin
+                </button>
+            </div>
+            <p class="text-[10px] text-amber-400 mt-3 font-mono">*PIN Default Admin: <strong>1234</strong></p>
+        </div>
+    </div>
+
+    <!-- BULK UPLOAD & EXPORT MODAL FOR ADMIN -->
+    <div id="uploadModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4 hidden">
+        <div class="glass-card max-w-lg w-full rounded-3xl p-6 border border-white/20 shadow-2xl relative max-h-[90vh] overflow-y-auto no-scrollbar">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+                <div class="flex items-center space-x-2">
+                    <span class="bg-cyberpink-500/20 text-cyberpink-400 p-2 rounded-lg text-xs"><i class="fa-solid fa-layer-group"></i></span>
+                    <h3 class="text-lg font-black text-white font-heading">Upload Bulk Poster Foto</h3>
+                </div>
+                <button onclick="closeUploadModal()" class="text-slate-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Upload Forms -->
+            <div class="space-y-4">
+                <!-- Bulk Photos Upload -->
+                <div class="border border-cyberpink-500/40 rounded-2xl p-4 bg-obsidian/60">
+                    <label class="block text-xs font-bold text-cyberpink-400 mb-1">🖼️ Upload Foto Poster Banyak Sekaligus (Bulk Images)</label>
+                    <p class="text-[11px] text-slate-300 mb-2">Pilih 1 atau beberapa file foto poster sekaligus dari galeri/folder Anda (Otomatis dikompres agar lancar di Vercel).</p>
+                    <input type="file" id="bulkImagesInput" accept="image/*" multiple class="text-xs text-slate-300 block w-full file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-cyberpink-500 file:text-white hover:file:bg-cyberpink-600 mb-2 cursor-pointer">
+                    <button onclick="handleBulkImagesUpload()" class="w-full bg-cyberpink-600 hover:bg-cyberpink-700 text-white font-bold py-2 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md">
+                        <i class="fa-solid fa-plus"></i> Tambah Semua Foto Ke Galeri
+                    </button>
+                </div>
+
+                <!-- Reset Collection Button -->
+                <div class="pt-1">
+                    <button onclick="resetGalleryToDefault()" class="w-full bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/40 py-2 rounded-xl text-xs font-bold">
+                        🗑️ Reset Galeri Ke Default
+                    </button>
+                </div>
+            </div>
+
+            <hr class="border-white/10 my-5">
+            
+            <!-- DOWNLOAD CLEAN HTML EXPORT SECTION -->
+            <div id="exportSection" class="bg-gradient-to-br from-emerald-950/80 to-teal-950/80 border border-emerald-400/40 p-4 rounded-2xl space-y-2">
+                <div class="flex items-center space-x-2 text-emerald-400 font-bold text-xs">
+                    <i class="fa-solid fa-download text-sm"></i>
+                    <span>DOWNLOAD WEB HTML UNTUK PUBLISH (VERCEL SIAP):</span>
+                </div>
+                <p class="text-[11px] text-slate-200 leading-relaxed">
+                    Klik tombol di bawah untuk mengunduh file <code class="text-emerald-300 bg-black/40 px-1 py-0.5 rounded">index.html</code>. File ini akan otomatis <strong>menyimpan semua foto poster</strong> secara permanen dan <strong>menghapus tombol Upload</strong> agar pengunjung umum tidak bisa upload.
+                </p>
+                <button onclick="exportCleanHTML()" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white p-3.5 rounded-xl text-xs font-black flex items-center justify-center gap-2 shadow-xl tracking-wider active:scale-95">
+                    <i class="fa-solid fa-file-arrow-down text-base"></i>
+                    <span>DOWNLOAD HTML SIAP PUBLISH</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let dramas = [
+            { id: 1, poster: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&auto=format&fit=crop&q=80", rating: "4.9", link: "#pricingSection" },
+            { id: 2, poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&auto=format&fit=crop&q=80", rating: "5.0", link: "#pricingSection" },
+            { id: 3, poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&auto=format&fit=crop&q=80", rating: "4.8", link: "#pricingSection" },
+            { id: 4, poster: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&auto=format&fit=crop&q=80", rating: "4.9", link: "#pricingSection" },
+            { id: 5, poster: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&auto=format&fit=crop&q=80", rating: "4.9", link: "#pricingSection" },
+            { id: 6, poster: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&auto=format&fit=crop&q=80", rating: "5.0", link: "#pricingSection" },
+            { id: 7, poster: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&auto=format&fit=crop&q=80", rating: "4.7", link: "#pricingSection" },
+            { id: 8, poster: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&auto=format&fit=crop&q=80", rating: "5.0", link: "#pricingSection" },
+            { id: 9, poster: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=80", rating: "4.8", link: "#pricingSection" },
+            // 👇 LINK KHUSUS POSTER 10 — Silakan ganti URL "https://link-poster-10-anda-di-sini.com" di bawah ini
+            { id: 10, poster: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&auto=format&fit=crop&q=80", rating: "4.9", link: "https://link-poster-10-anda-di-sini.com" }
+        ];
+
+        let isAdminAuthenticated = false;
+
+        // Instant safe DOM Load Initialization
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+            initApp();
+        }
+
+        function initApp() {
+            renderGallery();
+        }
+
+        function openDramaLink(linkTarget) {
+            if (linkTarget && linkTarget !== '#pricingSection') {
+                window.open(linkTarget, '_blank');
+            } else {
+                scrollToSection('pricingSection');
+            }
+        }
+
+        function closeAdminPinModal() {
+            document.getElementById('adminPinModal').classList.add('hidden');
+        }
+
+        function verifyAdminPIN() {
+            const inputPin = document.getElementById('adminPinInput').value;
+            if (inputPin === '1234') {
+                isAdminAuthenticated = true;
+                closeAdminPinModal();
+                openUploadModal();
+                showToast("Akses Admin Diterima!", "success");
+            } else {
+                showToast("PIN Admin Salah!", "error");
+            }
+        }
+
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.remove('hidden');
+        }
+
+        function closeUploadModal() {
+            document.getElementById('uploadModal').classList.add('hidden');
+        }
+
+        function compressImage(file, maxWidth, quality, callback) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    let width = img.width;
+                    let height = img.height;
+
+                    if (width > maxWidth) {
+                        height = Math.round((height * maxWidth) / width);
+                        width = maxWidth;
+                    }
+
+                    canvas.width = width;
+                    canvas.height = height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+
+                    const compressedBase64 = canvas.toDataURL('image/jpeg', quality);
+                    callback(compressedBase64);
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function handleBulkImagesUpload() {
+            const fileInput = document.getElementById('bulkImagesInput');
+            const files = fileInput.files;
+
+            if (!files || files.length === 0) {
+                showToast("Silakan pilih minimal 1 foto poster!", "error");
+                return;
+            }
+
+            let loadedCount = 0;
+            const newItems = [];
+
+            Array.from(files).forEach((file, idx) => {
+                compressImage(file, 800, 0.8, function(compressedBase64) {
+                    newItems.push({
+                        id: Date.now() + idx,
+                        poster: compressedBase64,
+                        rating: (4.7 + Math.random() * 0.3).toFixed(1)
+                    });
+
+                    loadedCount++;
+                    if (loadedCount === files.length) {
+                        dramas = newItems;
+                        renderGallery();
+                        fileInput.value = '';
+                        showToast(`Berhasil menampilkan ${loadedCount} foto poster baru di galeri!`, "success");
+                    }
+                });
+            });
+        }
+
+        function resetGalleryToDefault() {
+            dramas = [
+                { id: 1, poster: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&auto=format&fit=crop&q=80", rating: "4.9" },
+                { id: 2, poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&auto=format&fit=crop&q=80", rating: "5.0" }
+            ];
+            renderGallery();
+            showToast("Galeri berhasil direset!", "info");
+        }
+
+        function exportCleanHTML() {
+            // First render fresh gallery to ensure DOM is updated
+            renderGallery();
+
+            let htmlDoc = document.documentElement.cloneNode(true);
+
+            // 1. Clean Admin elements & upload triggers
+            const elementsToRemove = htmlDoc.querySelectorAll('#adminPinModal, #uploadModal, #adminUploadMobileBtn, [onclick*="openAdminPinModal"], [onclick*="openUploadModal"]');
+            elementsToRemove.forEach(el => el.remove());
+
+            // 2. Safe replacement of dramas array without string parameter substitution ($) bugs
+            let scripts = htmlDoc.querySelectorAll('script');
+            const jsonDramas = JSON.stringify(dramas);
+
+            scripts.forEach(script => {
+                if (script.textContent.includes('let dramas =') || script.textContent.includes('const dramas =')) {
+                    script.textContent = script.textContent.replace(
+                        /(let|const)\s+dramas\s*=\s*\[[\s\S]*?\];/m,
+                        () => `let dramas = ${jsonDramas};`
+                    );
+                }
+            });
+
+            // 3. Trigger Clean File Download
+            const fullHtmlString = "<!DOCTYPE html>\n" + htmlDoc.outerHTML;
+            const blob = new Blob([fullHtmlString], { type: 'text/html;charset=utf-8' });
+            const downloadUrl = URL.createObjectURL(blob);
+            
+            const downloadAnchor = document.createElement('a');
+            downloadAnchor.href = downloadUrl;
+            downloadAnchor.download = 'index.html';
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            document.body.removeChild(downloadAnchor);
+            URL.revokeObjectURL(downloadUrl);
+
+            showToast("HTML Siap Publish Vercel Diunduh! Semua foto & fitur bekerja 100%.", "success");
+        }
+
+        function renderGallery() {
+            const grid = document.getElementById('dramaGrid');
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            dramas.forEach((item) => {
+                const card = document.createElement('div');
+                card.className = "group relative rounded-3xl overflow-hidden glass-card hover:border-cyberpink-500/80 transition duration-300 flex flex-col justify-between shadow-2xl w-full border border-white/15";
+                
+                const targetLink = item.link || '#pricingSection';
+
+                card.innerHTML = `
+                    <div class="relative aspect-[3/4] w-full bg-slate-900 overflow-hidden cursor-pointer" 
+                         onclick="openDramaLink('${targetLink}')">
+                        <!-- Poster Image Only -->
+                        <img src="${item.poster}" alt="Poster Drama" 
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&auto=format&fit=crop&q=80';"
+                             class="poster-img w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+                        <!-- Rating Badge -->
+                        <div class="absolute top-3 right-3 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-xs font-bold text-amber-400 border border-amber-500/30 flex items-center gap-1 shadow-lg">
+                            <i class="fa-solid fa-star text-[10px]"></i> ${item.rating}
+                        </div>
+
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent"></div>
+                    </div>
+
+                    <div class="p-3 bg-surfaceCard/95 border-t border-white/10">
+                        <button onclick="openDramaLink('${targetLink}')" class="w-full bg-gradient-to-r from-amber-500 via-cyberpink-500 to-cyberpurple-600 hover:from-amber-600 hover:to-cyberpurple-700 text-white font-black text-xs sm:text-sm py-3 rounded-xl flex items-center justify-center gap-2 active:scale-95 shadow-neon-pink tracking-wider">
+                            <i class="fa-solid fa-crown text-amber-300 text-xs"></i> NONTON SEKARANG
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function subscribeVIP() {
+            showToast("Mengarahkan ke WhatsApp untuk Pendaftaran VIP...", "success");
+            const waNumber = "6281234567890"; // Ubah dengan nomor WhatsApp Anda
+            const message = encodeURIComponent("Halo Admin DramaJepang.com, saya berminat ambil Promo VIP Akses Selamanya Rp 99.000. Mohon info rekening / QRIS pembayarannya ya!");
+            setTimeout(() => {
+                window.open(`https://wa.me/${waNumber}?text=${message}`, '_blank');
+            }, 800);
+        }
+
+        function showToast(message, type = "info") {
+            const toast = document.createElement('div');
+            toast.className = `fixed top-5 right-5 z-50 max-w-xs px-4 py-3 rounded-xl text-xs font-bold text-white shadow-2xl flex items-center gap-2 border transition transform duration-300 ${
+                type === 'success' ? 'bg-emerald-600 border-emerald-400' :
+                type === 'error' ? 'bg-rose-600 border-rose-400' : 'bg-cyberpurple-600 border-cyberpink-400'
+            }`;
+            toast.innerHTML = `<i class="fa-solid fa-circle-info"></i> <span>${message}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
